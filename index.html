@@ -1,7 +1,7 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
-    <meta charset="pt-BR">
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -9,64 +9,56 @@
     <link rel="stylesheet" href="style.css">
     <title>Quiz app</title>
 </head>
-<body>
+<body class="escuro">
     <header>
         <div class="tema">
             <img src="./assets/images/icon-sun-dark.svg" alt="icone do sol">
             <button>
                 <div></div>
             </button>
-
-            <img src="./assets/images/icon-moon-dark.svg" alt="icone lua">
+            <img src="./assets/images/icon-moon-dark.svg" alt="icone da lua">
         </div>
     </header>
 
     <main>
-        <section class="boas_vindas">
-
-            <h1>Bem vindo(a) ao <br>
-            <strong>Frontend Quiz</strong>
+        <section class="boas-vindas">
+            <h1>
+                Bem-vindo(a) ao <br>
+                <strong>fronted Quiz!</strong>
             </h1>
 
-            <p>escolha um assunto para conversar</p>
+            <p>Escolha um assunto para começar.</p>
+        </section> 
+        
+        <section class="assuntos">
+            <button class="botao_html">
+                <div>
+                    <img src="./assets/images/icon-html.svg" alt="icone do HTML">
+                </div>
+                HTML
+            </button>
 
-            <section class="assuntos">
-                
-                <button class="botao_html">
-                    <div>
-                        <img src="./assets/images/icon-html.svg" alt="icone do html">
-                    </div>
-                    HTMl
-                </button>
-                
+            <button class="botao_css">
+                <div>
+                    <img src="./assets/images/icon-css.svg" alt="icone do CSS">
+                </div>
+                CSS
+            </button>
 
-                <button class="botao_css">
-                    <div>
-                        <img src="./assets/images/icon-css.svg" alt="icone do css">
-                    </div>
-                    CSS
-                </button>
+            <button class="botao_javascript">
+                <div>
+                    <img src="./assets/images/icon-js.svg" alt="icone do javascript">
+                </div>
+                Javascript
+            </button>
 
-
-                <button class="botao_js">
-                    <div>
-                        <img src="./assets/images/icon-js.svg" alt="icone do js">
-                    </div>
-                    javascript
-                </button>
-
-                <button class="botao_acessibilidade">
-                    <div>
-                        <img src="./assets/images/icon-accessibility.svg" alt="icone do acesibilidade">
-                    </div>
-                    Acessibilidade
-                </button>
-               
-
-            </section>
-
+            <button class="botao_acessibilidade">
+                <div>
+                    <img src="./assets/images/icon-accessibility.svg" alt="icone da accessibilidade">
+                </div>
+                accessibilidade
+            </button>
         </section>
     </main>
-    
 </body>
 </html>

@@ -1,54 +1,64 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: "Rubik", sans-serif;
-    -webkit-font-smoothing: antialiased
+    font-family: "rubik", sans-serif;
+    -webkit-font-smoothing: antialiased;
 }
 
-:root{
+:root {
     --bg-color: #f4f6fa;
     --purple: #a729f5;
     --primary-text-color: #313e51;
-    --secundary-text-color: #626c7f;
-    --shadow: 8px 16px 40px 8px rgba(143, 160, 193, 0.14);
-    --bg-html: #fff1e9;
-    --bg-css: #e0fdef;
-    --bg-js: #ebf0ff;
-    --bg-acessibilidade:#f6e7ff;
+    --secondary-text-color: #626c7f;
     --button-bg: #fff;
-    --withe: #fff;
-    --bg-mobile: url(./assets/images/pattern-background-mobile-light.svg);
-    --bg-desktop: url(./assets/images/pattern-background-desktop-light.svg)
+    --shadow: 0px 16px 40px 0px rgba(143, 160, 193, 0.14);
+    --bg-html:  #fff1e9;
+    --bg-css: #e0fdef;
+    --bg-javascript: #ebf0ff;
+    --bg-acessibilidade: #f6e7ff;
+    --white: #fff;
+    --bg-mobile: url(./assents/imagens/pattern-background-mobile-light);
+    --bg-desktop: url(./assents/imagens/pattern-background-desktop-light);
+}
+
+    
+body.escuro{
+    --bg-color: #313551;
+    --bg-mobile: url(./assets/images/pattern-background-mobile-dark.svg);
+    --bg-desktop: url(./assets/images/pattern-background-desktop-dark.svg);
+    --primary-text-color: #fff;
+    --secondary-text-color: #abc1e1;
+    --button-bg: #3b4d66;
+    --shadow: 0px 16px 40px 0px rgba(49, 62, 81, 0.14);
 
 }
 
-body{
+body {
     height: 100svh;
     background: var(--bg-mobile) var(--bg-color);
     background-repeat: no-repeat;
     background-size: cover;
-
-}
+ }
 
 header{
     padding: 16px 24px;
     display: flex;
-    justify-content: flex-end;
+    justify-content:  flex-end;
 }
 
-.tema{
+.tema {
     padding: 8px 0;
     display: flex;
     align-items: center;
     gap: 8px;
 }
 
-.tema img{
+.tema img {
     width: 16px;
 }
 
-.tema button{
+.tema button {
     height: 20px;
     width: 32px;
     background: var(--purple);
@@ -57,50 +67,51 @@ header{
     padding: 4px;
 }
 
-.tema button div{
-    background: var(--withe);
+.tema button div {
+    background-color: var(--white);
     width: 12px;
     height: 12px;
     border-radius: 999px;
 }
 
-main{
+main {
     padding: 32px 24px;
 }
 
-.boas_vindas {
+.boas-vindas {
     margin-bottom: 40px;
 }
 
-.boas_vindas h1{
+
+.boas-vindas h1 {
     font-size: 40px;
     font-weight: 300;
     color: var(--primary-text-color);
     margin-bottom: 16px;
 }
 
-.boas_vindas h1 strong{
+.boas-vindas h1 strong {
     font-weight: 500;
 }
 
-.boas_vindas p {
-    color: var(--secundary-text-color);
+.boas-vindas p {
+    color: var(--secondary-text-color);
     font-size: 14px;
     line-height: 150%;
     font-style: italic;
 }
 
 .assuntos {
-   display: flex;
-   flex-direction: column;
-   gap: 12px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
 }
 
 .assuntos button {
     border: none;
-    color: black;
+    background: var(--button-bg);
     display: flex;
-    align-items: center;
+    align-items:  center;
     gap: 16px;
     padding: 12px;
     border-radius: 12px;
@@ -117,38 +128,38 @@ main{
     border-radius: 5px;
 }
 
-.assuntos img {
+.assuntos button img {
     width: 100%;
 }
 
-.botao_html div{
+.botao_html div {
     background: var(--bg-html);
 }
 
 .botao_css div {
-    color: var(--bg-css);
+    background: var(--bg-css);
 }
 
-.botao_js div{
-    background: var(--bg-js);
+.botao_javascript div {
+    background: var(--bg-javascript);
 }
 
 .botao_acessibilidade div {
     background: var(--bg-acessibilidade);
 }
 
-@media(min-width: 1100px){
-    body{
+@media(min-width: 1100px) {
+    body {
         background: var(--bg-desktop) var(--bg-color);
         background-size: cover;
         background-repeat: no-repeat;
     }
 
-    header{
+    header {
         margin-block: 81px;
     }
 
-    .tema{
+    .tema {
         gap: 16px;
     }
 
@@ -156,7 +167,7 @@ main{
         width: 24px;
     }
 
-    .tema button{
+    .tema button {
         width: 48px;
         height: 28px;
     }
@@ -166,22 +177,22 @@ main{
         height: 20px;
     }
 
-    main{
+    main {
         display: flex;
         max-width: 1160px;
         margin-inline: auto;
     }
 
-    section{
+    section {
         width: 100%;
     }
 
-    .boas_vindas h1 {
+    .boas-vindas h1 {
         font-size: 64px;
         margin-bottom: 48px;
     }
 
-    .boas_vindas p {
+    .boas-vindas p {
         font-size: 20px;
     }
 
@@ -189,15 +200,14 @@ main{
         gap: 24px;
     }
 
-    .assuntos button{
+    .assuntos button {
         font-size: 28px;
         padding: 20px;
         gap: 32px;
     }
 
-    .assuntos button div{
+    .assuntos button div {
         width: 56px;
         height: 56px;
-        padding: 8px;
     }
 }
