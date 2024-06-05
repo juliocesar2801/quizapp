@@ -18,6 +18,8 @@
     --bg-javascript: #ebf0ff;
     --bg-acessibilidade: #f6e7ff;
     --white: #fff;
+    --green: #26d782;
+    --red: #ee5454;
     --bg-mobile: url(../../assents/imagens/pattern-background-mobile-light);
     --bg-desktop: url(../../assents/imagens/pattern-background-desktop-light);
 }
@@ -156,7 +158,12 @@ main{
 }
 
 .alternativas label:has(input:checked){
-    
+    outline: 3px solid var(--purple);
+
+    & span{
+        background: var(--purple);
+        color: var(--white) ;
+    }
 }
 
 .alternativas input{
@@ -214,3 +221,5 @@ main{
         height: 20px;
     }
 }
+
+
