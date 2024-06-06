@@ -121,6 +121,7 @@ main{
     font-size: 14px;
     color: var(--secondary-text-color);
     margin-bottom: 12px;
+    
 }
 
 .pergunta h2{
@@ -235,12 +236,12 @@ main{
 
     font-size: 18px;
     font: 500;
+    transition: background 0.3s;
 }
 
 .alternativas button:hover{
     background: var(--purple-hover);
     cursor: pointer;
-    transition: background 0.3s;
 }
 
 

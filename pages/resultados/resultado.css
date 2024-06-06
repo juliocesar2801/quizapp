@@ -218,7 +218,15 @@ main h2{
         }
     
         .pontuacao strong{
-            font-size: 144px;
+        color: var(--white);
+        width: 100%;
+
+
+        font-size: 18px;
+        font-weight: 500;
+        transition: background 0.3s;
+        box-shadow: var(--shadow);
+        
         }
     
         .pontuacao p{
